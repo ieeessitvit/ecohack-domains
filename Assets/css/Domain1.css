@@ -1,0 +1,78 @@
+:root {
+	--primary: #000100;
+	--box: #1b1b1b;
+	--green: #43c250;
+	--light: white;
+}
+
+.navbar {
+	box-sizing: border-box;
+	padding: 0 2%;
+	background-color: var(--primary);
+	height: 15vh;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 5;
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+	box-sizing: border-box;
+	width: 160px;
+	display: block;
+	padding: 1em;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+	background-color: var(--primary);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+	color: var(--green);
+	margin: 40px 20px;
+	font-size: 2rem;
+	text-align: center;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: nowrap;
+}
+.card {
+	min-height: 25vh;
+	background: var(--box);
+	padding: 32px;
+	box-sizing: border-box;
+	color: var(--light);
+	margin: 40px;
+	box-shadow: 0px 2px 18px -4px rgba(0, 0, 0, 0.75);
+	-webkit-transition: background-color 0.3s;
+	transition: all 0.4s ease;
+}
+.card:hover {
+	background: var(--green);
+	color: var(--light);
+	transform: scale(1.02);
+}
+.card-title {
+	margin-top: 0;
+	font-size: 16px;
+	font-weight: 600;
+	letter-spacing: 1.2px;
+	/*color: var(--green);*/
+}
+
+.card-content {
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	line-height: 1.5;
+}
